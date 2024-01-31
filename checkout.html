@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma To Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400&Poppins:wght@100;300;400;500;600;700&Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container mt-3">
+            <a class="navbar-brand" href="#"><img src="./images/image 2.png" alt="logo"></a>
+            <div class="justify-content-center d-none d-lg-flex">
+                <div class="search-bar d-flex px-3">
+                    <input type="text" class="search-bar-field" placeholder="search for products">
+                    <select name="dropdown" id="#" class="dropdownMenu">
+                        <option selected>All Category</option>
+                        <option>Electronics</option>
+                        <option>Furniture</option>
+                        <option>Food</option>
+                        <option>Gadget</option>
+                    </select>
+                    <div class="search-btn" type="submit"><img src="./images/Vector1.svg" alt="vector"></div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end">
+                <div class="wishlist"><img src="./images/Vector2.svg" alt="vector"></div>
+                <div class="user"><img src="./images/Vector3.svg" alt="vector"></div>
+                <div class="cart">
+                    <span>1</span>
+                    <img src="./images/Vector4.svg" alt="vector">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light mt-2 container px-3" style="background: #fa9370">
+        <div class="container">
+            <nav class="navbar navbar-light">
+                <div class="dropdown">
+                    <button class="btn" style="background: #fa9370; border: none; font-size: 20px" type="button"
+                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./images/Vector5.svg" alt="" width="30" height="24" class="d-inline-block align-text-top" />
+                        Browse Categories
+                    </button>
+                    <ul class="dropdown-menu mt-4" aria-labelledby="dropdownMenuButton1">
+                        <li class="d-flex me-3 py-3">
+                            <a class="dropdown-item" href="#">Fashion Collection</a>
+                        </li>
+                        <li class="d-flex me-3 py-3">
+                            <a class="dropdown-item" href="#">Electronics</a>
+                        </li>
+                        <li class="d-flex me-3 py-3">
+                            <a class="dropdown-item" href="#">Home Appliances</a>
+                        </li>
+                        <li class="d-flex me-3 py-3">
+                            <a class="dropdown-item" href="#">Kitchen Items</a>
+                        </li>
+                        <li class="d-flex me-3 py-3">
+                            <a class="dropdown-item" href="#">Furniture</a>
+                        </li>
+                        <li class="d-flex me-3 py-3">
+                            <a class="dropdown-item" href="#">Food</a>
+                        </li>
+                        <li class="d-flex me-3 py-3">
+                            <a class="dropdown-item" href="#">Gadgets</a>
+                        </li>
+                        <li class="d-flex me-3 py-3">
+                            <a class="dropdown-item" href="#">Health and Beauty</a>
+                        </li>
+                        <li class="d-flex me-3 py-3">
+                            <a class="dropdown-item" href="#">View all Categories</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <button class="d-lg-none d-sm-block" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false"
+                aria-label="Toggle navigation" style="background: #fa9370; border: none; font-size: 20px">
+                <img src="./images/Vector5.svg" alt="" width="30" height="24" class="d-inline-block align-text-top" />
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-light" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link text-light" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Products <img src="./images/Vector6.svg" alt="vector">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link text-light" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages <img src="./images/Vector6.svg" alt="vector">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link text-light" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories <img src="./images/Vector6.svg" alt="vector">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-light" aria-current="page" href="#">Blogs</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-light" aria-current="page" href="#">Review</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-light" aria-current="page" href="#">Fast Sale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end offcanvas-bg" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"><a class="navbar-brand" href="#"><img
+                        src="./images/image 2.png" alt="logo"></a></h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+            </button>
+        </div>
+        <ul class="navbar-nav ms-3">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Products <img src="./images/Vector29.svg" alt="vector">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Pages <img src="./images/Vector29.svg" alt="vector">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Categories <img src="./images/Vector29.svg" alt="vector">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Blogs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Review</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Fast Sale</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Contact</a>
+            </li>
+        </ul>
+        <div class="d-flex ms-3 mt-4">
+            <div class="search-bar d-flex px-3">
+                <input type="text" class="search-bar-field" placeholder="search for products">
+                <select name="dropdown" id="#" class="dropdownMenu">
+                    <option selected>All Category</option>
+                </select>
+                <div class="search-btn" type="submit"><img src="./images/Vector1.svg" alt="vector"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <div class="container seller-view-section1">
+            <div class="d-flex justify-content-between checkout-top">
+                <div class="ps-5">
+                    <span class="pe-3">Home</span>
+                    <img src="./images/Vector40.svg" alt="vector" class="pe-3">
+                    <span class="pe-3">Category</span>
+                    <img src="./images/Vector40.svg" alt="vector" class="pe-3">
+                    <span class="star-mobile pe-3">Star Mobile</span>
+                    <img src="./images/Vector40.svg" alt="vector" class="pe-3">
+                    <span class="star-mobile">Check Out</span>
+                </div>
+                <div class="pe-5 ps-5 ps-lg-0">
+                    <img src="./images/image 48.png" alt="vector" class="pb-2 me-1"><span class="ship-to">Ship to:</span>
+                    <span class="usa">Usa</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-4 shopping-cart-heading container">
+        <span class="ps-5">Checkout</span>
+    </div>
+
+    <div class="mt-4 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="billing-detail-form-container pb-3">
+                        <div class="billing-detail-form-heading ps-5 pt-5">
+                            <span>Billing details</span>
+                        </div>
+                        <form class="ps-5 pe-5 pt-4 row">
+                            <div class="col-md-6 mb-4">
+                                <label for="inputtext" class="form-label mb-3">First name <span class="required-field">*</span></label>
+                                <input type="text" class="form-control" id="inputtext" required>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label for="inputtext1" class="form-label mb-3">Last name <span class="required-field">*</span></label>
+                                <input type="text" class="form-control" id="inputtext1" required>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <label for="inputtext2" class="form-label mb-3">Company name <span class="required-field">*</span></label>
+                                <input type="text" class="form-control" id="inputtext2" required>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <label for="inputRegion" class="form-label mb-3">Country / Region <span class="required-field">*</span></label>
+                                <select id="inputRegion" class="form-select" required>
+                                    <option selected>Select</option>
+                                    <option>Pakistan</option>
+                                    <option>America</option>
+                                    <option>England</option>
+                                    <option>Egypt</option>
+                                    <option>France</option>
+                                    <option>Germany</option>
+                                </select>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <label for="inputAddress" class="form-label mb-3">Address <span class="required-field">*</span></label>
+                                <input type="text" class="form-control" id="inputAddress" required>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <label for="inputtext3" class="form-label mb-3">Town / city <span class="required-field">*</span></label>
+                                <input type="text" class="form-control" id="inputtext3" required>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <label for="inputState" class="form-label mb-3">State <span class="required-field">*</span></label>
+                                <select id="inputState" class="form-select" required>
+                                    <option selected>Select</option>
+                                    <option>Pakistan</option>
+                                    <option>America</option>
+                                    <option>England</option>
+                                    <option>Egypt</option>
+                                    <option>France</option>
+                                    <option>Germany</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label for="inputtext4" class="form-label mb-3">Phone <span class="required-field">*</span></label>
+                                <input type="text" class="form-control" id="inputtext4" required>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label for="inputEmail" class="form-label mb-3">Email <span class="required-field">*</span></label>
+                                <input type="email" class="form-control" id="inputEmail" required>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <label for="inputtext5" class="form-label mb-3">Order note (optional)</label>
+                                <input type="text" class="form-control" id="inputtext5">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 custom-col1 shopping-cart-right checkout-right ms-4">
+                    <div class="row row1 pb-4 ps-3">
+                        <div class="checkout-right-heading pt-5 ps-4">
+                            <span>Get Promo Code</span>
+                        </div>
+                        <div class="voucher-code-field d-flex ps-5 ms-4 mt-3">
+                            <input type="text" placeholder="Voucher Code">
+                            <button class="voucher-code-btn" type="submit">Apply</button>
+                        </div>
+                    </div>
+                    <div class="row row1 pb-5 ps-3">
+                        <div class="checkout-right-heading pt-5 ps-4">
+                            <span>Payment Method</span>
+                        </div>
+                        <div class="d-flex mt-3 ps-4">
+                            <div class="master-card pt-1 me-3 me-lg-2">
+                                <img src="./images/image 50.png" alt="image">
+                            </div>
+                            <div class="g-pay pt-1 me-3 me-lg-2">
+                                <img src="./images/image 51.png" alt="image">
+                            </div>
+                            <div class="pay-pal pt-1">
+                                <img src="./images/image 52.png" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row1 ps-3 pb-5">
+                        <div class="checkout-right-heading pt-4 ps-4"><span>Order Summary</span></div>
+                        <div class="shopping-cart-left-col1-content1 shopping-cart-left-col1-content3 pt-3 d-flex justify-content-between amount1">
+                            <span class="ms-2 ps-1">Sub Total</span><div class="shopping-cart-left-col1-content3 me-4 amount amount1">$500.00
+                            </div>
+                        </div>
+                        <div class="shopping-cart-left-col1-content1 shopping-cart-left-col1-content3 pt-2 d-flex justify-content-between amount1">
+                            <span class="ms-2 ps-1">Shipping Cost</span><div class="shopping-cart-left-col1-content3 me-3 pe-3 amount amount1">$10.00
+                            </div>
+                        </div>
+                        <div class="shopping-cart-left-col1-content1 shopping-cart-left-col1-content3 pt-2 d-flex justify-content-between amount1">
+                            <span class="ms-2 ps-1">Tax(10%)</span><div class="shopping-cart-left-col1-content3 me-4 amount amount1">$520.00
+                            </div>
+                        </div>
+                    </div>
+                     
+                    <div class="row ps-3">
+                        <div class="d-flex justify-content-between">
+                            <div class="shopping-cart-left-col1-content shopping-cart-left-col1-content1 shopping-cart-left-col1-content3 pt-3 ms-2 ps-1 sub-total amount1">Total
+                            </div>
+                            <div class="me-4 shopping-cart-left-col1-content shopping-cart-left-col1-content1 shopping-cart-left-col1-content3 pt-3 amount1">$520.00</div>
+                        </div>
+                        <div class="proceed-to-checkout-btn place-order-btn mt-3 pt-xl-1 pt-xxl-0 pt-lg-1 pt-md-1 ms-4"><a href="#">Place Order</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="main-footer">
+                <div class="footer-logo">
+                    <img src="./images/image 9.png" alt="image">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><img src="./images/facebook.svg" alt="facebook" width="32px"></a>
+                        <a href="https://www.instagram.com/"><img src="./images/instagram.svg" alt="instagram" width="32px"></a>
+                        <a href="https://twitter.com/"><img src="./images/twitter.svg" alt="twitter" width="32px"></a>
+                        <a href="https://www.youtube.com/"><img src="./images/youtube.svg" alt="youtube" width="32px"></a>
+                    </div>
+                </div>
+                <div class="footer-about">
+                    <div class="footer-about-heading">
+                        <span>Abouts</span>
+                    </div>
+                    <ul class="footer-about-list">
+                        <li class="list-item"><a href="#">Projects</a></li>
+                        <li class="list-item"><a href="#">Services</a></li>
+                        <li class="list-item"><a href="#">Services</a></li>
+                        <li class="list-item"><a href="#">About Projects</a></li>
+                        <li class="list-item"><a href="#">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-pricing">
+                    <div class="footer-pricing-heading">
+                        <span>Pricing</span>
+                    </div>
+                    <ul class="footer-pricing-list">
+                        <li class="list-item"><a href="#">About Projects</a></li>
+                        <li class="list-item"><a href="#">Managment</a></li>
+                        <li class="list-item"><a href="#">About Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-media">
+                    <div class="footer-media-heading">
+                        <span>Media</span>
+                    </div>
+                    <ul class="footer-pricing-list">
+                        <li class="list-item"><a href="#">Pricing Policy</a></li>
+                        <li class="list-item"><a href="#">Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <div class="footer-contact-heading">
+                        <span>Contact</span>
+                    </div>
+                    <ul class="footer-pricing-list">
+                        <li class="list-item"><a href="tel:(092)1234567">(092)1234567</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copy Right
+                <script>
+                    document.write(new Date().getFullYear());
+
+                </script> <a href="https://single-solution.com/">Single Solution</a> All Right Reserved
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

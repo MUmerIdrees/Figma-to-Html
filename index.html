@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma To Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400&Poppins:wght@100;300;400;500;600;700&Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container mt-3">
+            <a class="navbar-brand" href="#"><img src="./images/image 2.png" alt="logo"></a>
+            <div class="justify-content-center d-none d-lg-flex">
+                <div class="search-bar d-flex px-3">
+                    <input type="text" class="search-bar-field" placeholder="search for products">
+                    <select name="dropdown" id="#" class="dropdownMenu">
+                        <option selected>All Category</option>
+                        <option>Electronics</option>
+                        <option>Furniture</option>
+                        <option>Food</option>
+                        <option>Gadget</option>
+                    </select>
+                    <div class="search-btn" type="submit"><img src="./images/Vector1.svg" alt="vector"></div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end">
+                <div class="wishlist"><img src="./images/Vector2.svg" alt="vector"></div>
+                <div class="user"><img src="./images/Vector3.svg" alt="vector"></div>
+                <div class="cart">
+                    <span>1</span>
+                    <img src="./images/Vector4.svg" alt="vector">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light mt-2 container px-3" style="background: #fa9370">
+        <div class="container">
+            <nav class="navbar navbar-light">
+                <div class="dropdown">
+                    <button class="btn" style="background: #fa9370; border: none; font-size: 20px" type="button"
+                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./images/Vector5.svg" alt="" width="30" height="24" class="d-inline-block align-text-top" />
+                        Browse Categories
+                    </button>
+                    <ul class="dropdown-menu mt-4" aria-labelledby="dropdownMenuButton1">
+                        <li class="d-flex me-3 py-3">
+                            <a class="dropdown-item" href="#">Fashion Collection</a>
+                        </li>
+                        <li class="d-flex me-3 py-3">
+                            <a class="dropdown-item" href="#">Electronics</a>
+                        </li>
+                        <li class="d-flex me-3 py-3">
+                            <a class="dropdown-item" href="#">Home Appliances</a>
+                        </li>
+                        <li class="d-flex me-3 py-3">
+                            <a class="dropdown-item" href="#">Kitchen Items</a>
+                        </li>
+                        <li class="d-flex me-3 py-3">
+                            <a class="dropdown-item" href="#">Furniture</a>
+                        </li>
+                        <li class="d-flex me-3 py-3">
+                            <a class="dropdown-item" href="#">Food</a>
+                        </li>
+                        <li class="d-flex me-3 py-3">
+                            <a class="dropdown-item" href="#">Gadgets</a>
+                        </li>
+                        <li class="d-flex me-3 py-3">
+                            <a class="dropdown-item" href="#">Health and Beauty</a>
+                        </li>
+                        <li class="d-flex me-3 py-3">
+                            <a class="dropdown-item" href="#">View all Categories</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <button class="d-lg-none d-sm-block" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false"
+                aria-label="Toggle navigation" style="background: #fa9370; border: none; font-size: 20px">
+                <img src="./images/Vector5.svg" alt="" width="30" height="24" class="d-inline-block align-text-top" />
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-light" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link text-light" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Products <img src="./images/Vector6.svg" alt="vector">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link text-light" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages <img src="./images/Vector6.svg" alt="vector">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link text-light" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories <img src="./images/Vector6.svg" alt="vector">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-light" aria-current="page" href="#">Blogs</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-light" aria-current="page" href="#">Review</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-light" aria-current="page" href="#">Fast Sale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end offcanvas-bg" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"><a class="navbar-brand" href="#"><img
+                        src="./images/image 2.png" alt="logo"></a></h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+            </button>
+        </div>
+        <ul class="navbar-nav ms-3">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Products <img src="./images/Vector29.svg" alt="vector">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Pages <img src="./images/Vector29.svg" alt="vector">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Categories <img src="./images/Vector29.svg" alt="vector">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Blogs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Review</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Fast Sale</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Contact</a>
+            </li>
+        </ul>
+        <div class="d-flex ms-3 mt-4">
+            <div class="search-bar d-flex px-3">
+                <input type="text" class="search-bar-field" placeholder="search for products">
+                <select name="dropdown" id="#" class="dropdownMenu">
+                    <option selected>All Category</option>
+                </select>
+                <div class="search-btn" type="submit"><img src="./images/Vector1.svg" alt="vector"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExample" class="carousel slide container px-0 mt-2">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="content">
+                    <span class="span1">Up To</span><span class="span2">70%</span> <br>
+                    <span class="span3">Trendy</span><span class="span4">Fashion</span>
+                    <div class="text">Collection</div>
+                    <button class="btn slider-btn" type="submit"><a href="#">Buy Now</a></button>
+                </div>
+                <img src="./images/shopping.png" alt="shop">
+            </div>
+            <div class="carousel-item">
+                <div class="content">
+                    <span class="span1">Up To</span><span class="span2">70%</span> <br>
+                    <span class="span3">Trendy</span><span class="span4">Fashion</span>
+                    <div class="text">Collection</div>
+                    <button class="btn slider-btn" type="submit"><a href="#">Buy Now</a></button>
+                </div>
+                <img src="./images/shopping.png" alt="shop">
+            </div>
+            <div class="carousel-item">
+                <div class="content">
+                    <span class="span1">Up To</span><span class="span2">70%</span> <br>
+                    <span class="span3">Trendy</span><span class="span4">Fashion</span>
+                    <div class="text">Collection</div>
+                    <button class="btn slider-btn" type="submit"><a href="#">Buy Now</a></button>
+                </div>
+                <img src="./images/shopping.png" alt="shop">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <img src="./images/vector10.svg" alt="vector">
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <img src="./images/Vector9.svg" alt="vector">
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="section2-container section2-category container">
+        <div class="section2-top">
+            <div class="container">
+                <div class="category-heading">
+                    <span class="span1">Choose</span><span class="span2">By Category</span>
+                </div>
+            </div>
+        </div>
+        <div class="section2-bottom">
+            <div class="owl-carousel owl-theme section2-carousel" id="owl-carousel-1">
+                <div class="category-item">
+                    <img src="./images/image 12.png" alt="image">
+                    <div class="txt">Fashion</div>
+                </div>
+                <div class="category-item">
+                    <img src="./images/image 13.png" alt="image">
+                    <div class="txt">Electronic</div>
+                </div>
+                <div class="category-item">
+                    <img src="./images/image 14.png" alt="image">
+                    <div class="txt">Furniture</div>
+                </div>
+                <div class="category-item">
+                    <img src="./images/image 15.png" alt="image">
+                    <div class="txt">Food</div>
+                </div>
+                <div class="category-item">
+                    <img src="./images/image 16.png" alt="image">
+                    <div class="txt">Gadget</div>
+                </div>
+                <div class="category-item">
+                    <img src="./images/image 17.png" alt="image">
+                    <div class="txt">Beauty</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container cards-section">
+        <div class="cards-section-top">
+            <div class="cards-section-content">1- 1600 OVER 70,000 RESULTS FOR:</div>
+            <div class="cards-section-right">
+                <div class="right-side-content">SORT BY:</div>
+                <div class="dropdown-box">
+                    <div class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Best Match <img src="./images/Vector12.svg" alt="vector">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box2"><img src="./images/Group 42.svg" alt="group42"></div>
+            </div>
+        </div>
+        <div class="cards-section-center">
+            <div class="tag-container">
+                <span class="tag">ready to ship</span>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="tag-container">
+                <span class="tag">price minimum</span>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="tag-container">
+                <span class="tag">ready to ship</span>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="tag-container">
+                <span class="tag">ready to ship</span>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="tag-container">
+                <span class="tag">ready to ship</span>
+                <button class="close-btn">&times;</button>
+            </div>
+            <button class="clear-filter-btn">Clear All Filters</button>
+        </div>
+        <div class="container cards-section-bottom">
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="./images/image 8.png" alt="image">
+                        <div class="price">$5 <span>$10.00</span></div>
+                        <div class="card-heading">Naturals Bar Soap Saver Pack</div>
+                        <div class="card-bottom">
+                            <div class="card-rating"><img src="./images/Vector13.svg" alt="vector"><span>4.9</span></div>
+                            <div class="line"></div>
+                            <span class="sold-items">Sold: 30</span>
+                            <div class="cart1"><img src="./images/Vector14.svg" alt="vector"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="./images/image 18.png" alt="image">
+                        <div class="price">$5 <span>$10.00</span></div>
+                        <div class="card-heading">Naturals Bar Soap Saver Pack</div>
+                        <div class="card-bottom">
+                            <div class="card-rating"><img src="./images/Vector13.svg" alt="vector"><span>4.9</span></div>
+                            <div class="line"></div>
+                            <span class="sold-items">Sold: 30</span>
+                            <div class="cart1"><img src="./images/Vector14.svg" alt="vector"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="./images/image 19.png" alt="image">
+                        <div class="price">$5 <span>$10.00</span></div>
+                        <div class="card-heading">Naturals Bar Soap Saver Pack</div>
+                        <div class="card-bottom">
+                            <div class="card-rating"><img src="./images/Vector13.svg" alt="vector"><span>4.9</span></div>
+                            <div class="line"></div>
+                            <span class="sold-items">Sold: 30</span>
+                            <div class="cart1"><img src="./images/Vector14.svg" alt="vector"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="./images/image 20.png" alt="image">
+                        <div class="price">$5 <span>$10.00</span></div>
+                        <div class="card-heading">Naturals Bar Soap Saver Pack</div>
+                        <div class="card-bottom">
+                            <div class="card-rating"><img src="./images/Vector13.svg" alt="vector"><span>4.9</span></div>
+                            <div class="line"></div>
+                            <span class="sold-items">Sold: 30</span>
+                            <div class="cart1"><img src="./images/Vector14.svg" alt="vector"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="./images/image 21.png" alt="image">
+                        <div class="price">$5 <span>$10.00</span></div>
+                        <div class="card-heading">Naturals Bar Soap Saver Pack</div>
+                        <div class="card-bottom">
+                            <div class="card-rating"><img src="./images/Vector13.svg" alt="vector"><span>4.9</span></div>
+                            <div class="line"></div>
+                            <span class="sold-items">Sold: 30</span>
+                            <div class="cart1"><img src="./images/Vector14.svg" alt="vector"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="./images/image 22.png" alt="image">
+                        <div class="price">$5 <span>$10.00</span></div>
+                        <div class="card-heading">Naturals Bar Soap Saver Pack</div>
+                        <div class="card-bottom">
+                            <div class="card-rating"><img src="./images/Vector13.svg" alt="vector"><span>4.9</span></div>
+                            <div class="line"></div>
+                            <span class="sold-items">Sold: 30</span>
+                            <div class="cart1"><img src="./images/Vector14.svg" alt="vector"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="./images/image 23.png" alt="image">
+                        <div class="price">$5 <span>$10.00</span></div>
+                        <div class="card-heading">Naturals Bar Soap Saver Pack</div>
+                        <div class="card-bottom">
+                            <div class="card-rating"><img src="./images/Vector13.svg" alt="vector"><span>4.9</span></div>
+                            <div class="line"></div>
+                            <span class="sold-items">Sold: 30</span>
+                            <div class="cart1"><img src="./images/Vector14.svg" alt="vector"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="./images/image 24.png" alt="image">
+                        <div class="price">$5 <span>$10.00</span></div>
+                        <div class="card-heading">Naturals Bar Soap Saver Pack</div>
+                        <div class="card-bottom">
+                            <div class="card-rating"><img src="./images/Vector13.svg" alt="vector"><span>4.9</span></div>
+                            <div class="line"></div>
+                            <span class="sold-items">Sold: 30</span>
+                            <div class="cart1"><img src="./images/Vector14.svg" alt="vector"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="card-btn">Load More</button>
+        </div>
+    </div>
+
+    <div class="container section4">
+        <div class="section4-heading">
+            <span>Shop by (Sub-Category Name)</span>
+        </div>
+        <div class="owl-carousel owl-theme section4-carousel" id="owl-carousel-2">
+            <div class="card1">
+                <div class="card1-txt">
+                    <span>Starting from $99</span>
+                </div>
+                <div class="card1-center-txt">
+                    <span>Health care</span> <br>
+                    <span>Monitor</span>
+                </div>
+                <div class="card1-bottom-txt">
+                    <a href="#">Shop Now</a>
+                </div>
+                <img src="./images/image 54.png" alt="image" class="image1">
+            </div>
+            <div class="card1">
+                <div class="card1-txt">
+                    <span>Starting from $99</span>
+                </div>
+                <div class="card1-center-txt">
+                    <span>Health care</span> <br>
+                    <span>Monitor</span>
+                </div>
+                <div class="card1-bottom-txt">
+                    <a href="#">Shop Now</a>
+                </div>
+                <img src="./images/Nike-Shoe 1.png" alt="image" class="image2">
+            </div>
+            <div class="card1">
+                <div class="card1-txt">
+                    <span>Starting from $99</span>
+                </div>
+                <div class="card1-center-txt">
+                    <span>Health care</span> <br>
+                    <span>Monitor</span>
+                </div>
+                <div class="card1-bottom-txt">
+                    <a href="#">Shop Now</a>
+                </div>
+                <img src="./images/image 4.png" alt="image" class="image3">
+            </div>
+            <div class="card1">
+                <div class="card1-txt">
+                    <span>Starting from $99</span>
+                </div>
+                <div class="card1-center-txt">
+                    <span>Health care</span> <br>
+                    <span>Monitor</span>
+                </div>
+                <div class="card1-bottom-txt">
+                    <a href="#">Shop Now</a>
+                </div>
+                <img src="./images/image 54.png" alt="image" class="image1">
+            </div>
+            <div class="card1">
+                <div class="card1-txt">
+                    <span>Starting from $99</span>
+                </div>
+                <div class="card1-center-txt">
+                    <span>Health care</span> <br>
+                    <span>Monitor</span>
+                </div>
+                <div class="card1-bottom-txt">
+                    <a href="#">Shop Now</a>
+                </div>
+                <img src="./images/Nike-Shoe 1.png" alt="image" class="image2">
+            </div>
+            <div class="card1">
+                <div class="card1-txt">
+                    <span>Starting from $99</span>
+                </div>
+                <div class="card1-center-txt">
+                    <span>Health care</span> <br>
+                    <span>Monitor</span>
+                </div>
+                <div class="card1-bottom-txt">
+                    <a href="#">Shop Now</a>
+                </div>
+                <img src="./images/image 4.png" alt="image" class="image3">
+            </div>
+            <div class="card1">
+                <div class="card1-txt">
+                    <span>Starting from $99</span>
+                </div>
+                <div class="card1-center-txt">
+                    <span>Health care</span> <br>
+                    <span>Monitor</span>
+                </div>
+                <div class="card1-bottom-txt">
+                    <a href="#">Shop Now</a>
+                </div>
+                <img src="./images/image 54.png" alt="image" class="image1">
+            </div>
+            <div class="card1">
+                <div class="card1-txt">
+                    <span>Starting from $99</span>
+                </div>
+                <div class="card1-center-txt">
+                    <span>Health care</span> <br>
+                    <span>Monitor</span>
+                </div>
+                <div class="card1-bottom-txt">
+                    <a href="#">Shop Now</a>
+                </div>
+                <img src="./images/Nike-Shoe 1.png" alt="image" class="image2">
+            </div>
+            <div class="card1">
+                <div class="card1-txt">
+                    <span>Starting from $99</span>
+                </div>
+                <div class="card1-center-txt">
+                    <span>Health care</span> <br>
+                    <span>Monitor</span>
+                </div>
+                <div class="card1-bottom-txt">
+                    <a href="#">Shop Now</a>
+                </div>
+                <img src="./images/image 4.png" alt="image" class="image3">
+            </div>
+            <div class="card1">
+                <div class="card1-txt">
+                    <span>Starting from $99</span>
+                </div>
+                <div class="card1-center-txt">
+                    <span>Health care</span> <br>
+                    <span>Monitor</span>
+                </div>
+                <div class="card1-bottom-txt">
+                    <a href="#">Shop Now</a>
+                </div>
+                <img src="./images/image 54.png" alt="image" class="image1">
+            </div>
+            <div class="card1">
+                <div class="card1-txt">
+                    <span>Starting from $99</span>
+                </div>
+                <div class="card1-center-txt">
+                    <span>Health care</span> <br>
+                    <span>Monitor</span>
+                </div>
+                <div class="card1-bottom-txt">
+                    <a href="#">Shop Now</a>
+                </div>
+                <img src="./images/Nike-Shoe 1.png" alt="image" class="image2">
+            </div>
+            <div class="card1">
+                <div class="card1-txt">
+                    <span>Starting from $99</span>
+                </div>
+                <div class="card1-center-txt">
+                    <span>Health care</span> <br>
+                    <span>Monitor</span>
+                </div>
+                <div class="card1-bottom-txt">
+                    <a href="#">Shop Now</a>
+                </div>
+                <img src="./images/image 4.png" alt="image" class="image3">
+            </div>
+        </div>
+    </div>
+
+    <div class="section5 section5-category container">
+        <div class="section5-top">
+            <div class="container">
+                <div class="section5-heading">
+                    Latest Products
+                </div>
+            </div>
+        </div>
+        <div class="section5-bottom">
+            <div class="owl-carousel owl-theme" id="owl-carousel-3">
+                <div class="section5-item">
+                    <div class="section5-item-top-txt">
+                        <span>Gadget Store</span>
+                    </div>
+                    <div class="section5-item-center-txt">
+                        <span>30% Sale</span>
+                    </div>
+                    <div class="section5-item-bottom-txt">
+                        <a href="#">Buy Now</a>
+                    </div>
+                    <img src="./images/ear-birds.png" alt="earbirds">
+                </div>
+                <div class="section5-item1">
+                    <div class="section5-item-top-txt">
+                        <span>Gadget Store</span>
+                    </div>
+                    <div class="section5-item-center-txt1">
+                        <span>IMac</span>
+                    </div>
+                    <div class="section5-item-center-txt2">
+                        <span>30% Sale</span>
+                    </div>
+                    <div class="section5-item-bottom-txt2">
+                        <a href="#">Buy Now</a>
+                    </div>
+                    <img src="./images/image 4.png" alt="image" class="image">
+                </div>
+                <div class="section5-item">
+                    <div class="section5-item-top-txt">
+                        <span>Gadget Store</span>
+                    </div>
+                    <div class="section5-item-center-txt">
+                        <span>30% Sale</span>
+                    </div>
+                    <div class="section5-item-bottom-txt3">
+                        <a href="#">Buy Now</a>
+                    </div>
+                    <img src="./images/image 5.png" alt="image" class="image1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section6 container">
+        <div class="section6-heading">
+            Featured Products
+        </div>
+        <div class="section6-bottom container">
+            <div class="section6-bottom-txt">
+                <div class="section6-bottom-left-txt">
+                    <span>On Sale Now</span>
+                </div>
+                <div class="section6-bottom-center-txt">
+                    <div class="section6-bottom-center-txt1">
+                        <span>Ending In:</span>
+                    </div>
+                    <div class="section6-bottom-center-txt2">
+                        <span>11</span>
+                    </div>
+                    <div class="section6-bottom-center-txt2">
+                        <span>11</span>
+                    </div>
+                    <div class="section6-bottom-center-txt2">
+                        <span>11</span>
+                    </div>
+                </div>
+                <div class="section6-bottom-right-txt">
+                    <a href="#">Shop More</a>
+                </div>
+            </div>
+            <hr>
+            <div class="owl-carousel owl-theme section6-carousel" id="owl-carousel-4">
+                <div class="section6-item">
+                    <img src="./images/cap.png" alt="cap">
+                    <div class="section6-item-tag">
+                        <span>Featured</span>
+                        <img src="./images/image 6.png" alt="image">
+                    </div>
+                    <div class="section6-item-txt">
+                        <span>Simple Cap for boys</span>
+                    </div>
+                    <div class="section6-item-price">
+                        <span>$ 20</span>
+                    </div>
+                    <div class="section6-item-old-price">
+                        <span>$ 30</span>
+                    </div>
+                </div>
+                <div class="section6-item">
+                    <img src="./images/image 25.png" alt="image">
+                    <div class="section6-item-tag">
+                        <span>Featured</span>
+                        <img src="./images/image 6.png" alt="image">
+                    </div>
+                    <div class="section6-item-txt">
+                        <span>Simple Cap for boys</span>
+                    </div>
+                    <div class="section6-item-price">
+                        <span>$ 20</span>
+                    </div>
+                    <div class="section6-item-old-price">
+                        <span>$ 30</span>
+                    </div>
+                </div>
+                <div class="section6-item">
+                    <img src="./images/image 26.png" alt="image">
+                    <div class="section6-item-tag">
+                        <span>Featured</span>
+                        <img src="./images/image 6.png" alt="image">
+                    </div>
+                    <div class="section6-item-txt">
+                        <span>Simple Cap for boys</span>
+                    </div>
+                    <div class="section6-item-price">
+                        <span>$ 20</span>
+                    </div>
+                    <div class="section6-item-old-price">
+                        <span>$ 30</span>
+                    </div>
+                </div>
+                <div class="section6-item">
+                    <img src="./images/image 27.png" alt="image">
+                    <div class="section6-item-tag">
+                        <span>Featured</span>
+                        <img src="./images/image 6.png" alt="image">
+                    </div>
+                    <div class="section6-item-txt">
+                        <span>Simple Cap for boys</span>
+                    </div>
+                    <div class="section6-item-price">
+                        <span>$ 20</span>
+                    </div>
+                    <div class="section6-item-old-price">
+                        <span>$ 30</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section7 container">
+        <div class="section7-heading">
+            On Sale Products
+        </div>
+        <div class="section7-card-container container">
+            <div class="section7-card-container-btn1">
+                <div class="section7-card-container-btn1-txt">
+                    <a href="#">Shop More</a>
+                </div>
+                <a href="#"><img src="./images/Vector24.svg" alt="vector"></a>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="section7-item">
+                        <img src="./images/image 30.png" alt="image">
+                        <div class="section7-item-txt">
+                            <span>Simple Cap for boys</span>
+                        </div>
+                        <div class="section7-item-price">
+                            <span>$ 20</span>
+                        </div>
+                        <div class="section7-item-old-price">
+                            <span>$ 30</span>
+                        </div>
+                        <div class="section7-item-rating">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector23.svg" alt="vector">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="section7-item">
+                        <img src="./images/image 31.png" alt="image">
+                        <div class="section7-item-txt">
+                            <span>Simple Cap for boys</span>
+                        </div>
+                        <div class="section7-item-price">
+                            <span>$ 20</span>
+                        </div>
+                        <div class="section7-item-old-price">
+                            <span>$ 30</span>
+                        </div>
+                        <div class="section7-item-rating">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector23.svg" alt="vector">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="section7-item">
+                        <img src="./images/image 32.png" alt="image">
+                        <div class="section7-item-txt">
+                            <span>Simple Cap for boys</span>
+                        </div>
+                        <div class="section7-item-price">
+                            <span>$ 20</span>
+                        </div>
+                        <div class="section7-item-old-price">
+                            <span>$ 30</span>
+                        </div>
+                        <div class="section7-item-rating">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector23.svg" alt="vector">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="section7-item">
+                        <img src="./images/image 33.png" alt="image">
+                        <div class="section7-item-txt">
+                            <span>Simple Cap for boys</span>
+                        </div>
+                        <div class="section7-item-price">
+                            <span>$ 20</span>
+                        </div>
+                        <div class="section7-item-old-price">
+                            <span>$ 30</span>
+                        </div>
+                        <div class="section7-item-rating">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector23.svg" alt="vector">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="section7-item">
+                        <img src="./images/image 34.png" alt="image">
+                        <div class="section7-item-txt">
+                            <span>Simple Cap for boys</span>
+                        </div>
+                        <div class="section7-item-price">
+                            <span>$ 20</span>
+                        </div>
+                        <div class="section7-item-old-price">
+                            <span>$ 30</span>
+                        </div>
+                        <div class="section7-item-rating">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector23.svg" alt="vector">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="section7-item">
+                        <div class="section7-item-image">
+                            <img src="./images/Nike-Shoe 1(2).png" alt="image">
+                        </div>
+                        <div class="section7-item-txt">
+                            <span>Simple Cap for boys</span>
+                        </div>
+                        <div class="section7-item-price">
+                            <span>$ 20</span>
+                        </div>
+                        <div class="section7-item-old-price">
+                            <span>$ 30</span>
+                        </div>
+                        <div class="section7-item-rating">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector23.svg" alt="vector">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="section7-item">
+                        <img src="./images/image 28.png" alt="image">
+                        <div class="section7-item-txt">
+                            <span>Simple Cap for boys</span>
+                        </div>
+                        <div class="section7-item-price">
+                            <span>$ 20</span>
+                        </div>
+                        <div class="section7-item-old-price">
+                            <span>$ 30</span>
+                        </div>
+                        <div class="section7-item-rating">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector23.svg" alt="vector">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="section7-item">
+                        <img src="./images/image 29.png" alt="image">
+                        <div class="section7-item-txt">
+                            <span>Simple Cap for boys</span>
+                        </div>
+                        <div class="section7-item-price">
+                            <span>$ 20</span>
+                        </div>
+                        <div class="section7-item-old-price">
+                            <span>$ 30</span>
+                        </div>
+                        <div class="section7-item-rating">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector22.svg" alt="vector">
+                            <img src="./images/Vector23.svg" alt="vector">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="section7-card-btn">Load More</button>
+        </div>
+    </div>
+
+    <div class="container section8">
+        <div class="section8-image-container">
+            <img src="./images/image 11.png" alt="image">
+        </div>
+        <div class="section8-content-container">
+            <div class="section8-content-container-heading">
+                <span>Got Question?</span>
+            </div>
+            <div class="accordion" id="accordionExample">
+                <div class="accord-item">
+                    <button class="accord-button" id="headingOne" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Who we are?
+                    </button>
+                    <div id="collapseOne" class="accord-body collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                    </div>
+                </div>
+                <div class="accord-item">
+                    <button class="accord-button collapsed" id="headingTwo" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                        How do we sell?
+                    </button>
+                    <div id="collapseTwo" class="accord-body collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                    </div>
+                </div>
+                <div class="accord-item">
+                    <button class="accord-button collapsed" id="headingThree" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                        How do we sell?
+                    </button>
+                    <div id="collapseThree" class="accord-body collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                    </div>
+                </div>
+                <div class="accord-item">
+                    <button class="accord-button collapsed" id="headingFour" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                        How do we sell?
+                    </button>
+                    <div id="collapseFour" class="accord-body collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="main-footer">
+                <div class="footer-logo">
+                    <img src="./images/image 9.png" alt="image">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><img src="./images/facebook.svg" alt="facebook" width="32px"></a>
+                        <a href="https://www.instagram.com/"><img src="./images/instagram.svg" alt="instagram" width="32px"></a>
+                        <a href="https://twitter.com/"><img src="./images/twitter.svg" alt="twitter" width="32px"></a>
+                        <a href="https://www.youtube.com/"><img src="./images/youtube.svg" alt="youtube" width="32px"></a>
+                    </div>
+                </div>
+                <div class="footer-about">
+                    <div class="footer-about-heading">
+                        <span>Abouts</span>
+                    </div>
+                    <ul class="footer-about-list">
+                        <li class="list-item"><a href="#">Projects</a></li>
+                        <li class="list-item"><a href="#">Services</a></li>
+                        <li class="list-item"><a href="#">Services</a></li>
+                        <li class="list-item"><a href="#">About Projects</a></li>
+                        <li class="list-item"><a href="#">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-pricing">
+                    <div class="footer-pricing-heading">
+                        <span>Pricing</span>
+                    </div>
+                    <ul class="footer-pricing-list">
+                        <li class="list-item"><a href="#">About Projects</a></li>
+                        <li class="list-item"><a href="#">Managment</a></li>
+                        <li class="list-item"><a href="#">About Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-media">
+                    <div class="footer-media-heading">
+                        <span>Media</span>
+                    </div>
+                    <ul class="footer-pricing-list">
+                        <li class="list-item"><a href="#">Pricing Policy</a></li>
+                        <li class="list-item"><a href="#">Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <div class="footer-contact-heading">
+                        <span>Contact</span>
+                    </div>
+                    <ul class="footer-pricing-list">
+                        <li class="list-item"><a href="tel:(092)1234567">(092)1234567</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copy Right
+                <script>
+                    document.write(new Date().getFullYear());
+
+                </script> <a href="https://single-solution.com/">Single Solution</a> All Right Reserved
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
